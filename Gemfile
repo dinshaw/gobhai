@@ -2,11 +2,30 @@ source 'https://rubygems.org'
 
 gem 'rails', '3.2.9'
 
-# Bundle edge Rails instead:
-# gem 'rails', :git => 'git://github.com/rails/rails.git'
+gem 'haml'
+gem 'devise'
+gem 'cancan'
+gem 'activeadmin'
+gem 'state_machine'
+gem 'paperclip'
+gem 'hoptoad_notifier'
+gem 'acts_as_tree'
+gem 'acts_as_list'
+gem 'redcarpet'
+gem 'aws-sdk'
+gem 'simple_form'
+gem 'heroku'
+gem 'taps'
+gem 'truncate_html'
 
-gem 'pg'
-
+group :test do
+  gem 'rspec-rails'
+  gem 'factory_girl_rails'
+  gem 'shoulda-matchers'
+  gem 'shoulda-context', require: false
+  gem 'capybara'
+  gem 'database_cleaner'
+end
 
 # Gems used only for assets and not required
 # in production environments by default.
